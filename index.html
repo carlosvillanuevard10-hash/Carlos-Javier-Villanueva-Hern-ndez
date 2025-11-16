@@ -3,44 +3,52 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Portafolio Profesional - Ingeniero de Software & Técnico Electromecánico</title>
 
     <style>
-        @media (max-width: 600px)
         body {
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
             background-color: #f3f3f3;
             color: #222;
         }
+
         header {
             background: #1e1e1e;
             color: white;
-            padding: 60px 20px;
+            padding: 40px 20px;
             text-align: center;
         }
-        header h1 {
-            font-size: 30px;
-            margin-bottom: 10px;
+
+        header img {
+            margin-bottom: 15px;
         }
+
+        header h1 {
+            font-size: 28px;
+            margin: 10px 0;
+        }
+
         header p {
-            font-size: 20px;         
+            font-size: 18px;
         }
 
         nav {
             background: #111;
             display: flex;
+            flex-wrap: wrap; /* <-- hace que los botones bajen en teléfono */
             justify-content: center;
             padding: 10px 0;
         }
+
         nav a {
             color: white;
-            margin: 0 20px;
+            margin: 8px 15px;
             text-decoration: none;
             font-size: 18px;
         }
+
         nav a:hover {
             text-decoration: underline;
         }
@@ -53,7 +61,7 @@
 
         h2 {
             color: #1e1e1e;
-            font-size: 30px;
+            font-size: 28px;
             margin-bottom: 10px;
         }
 
@@ -81,26 +89,59 @@
             padding: 20px;
             margin-top: 40px;
         }
-.profile-photo {
-    width: 160px;       /* Tamaño de la imagen */
-    height: 160px;      /* Debe ser igual al width */
-    border-radius: 50%; /* Hace la imagen redonda */
-    object-fit: cover;  /* Evita deformaciones */
-}
 
+        .profile-photo {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
 
+        /* -------------------------------
+           RESPONSIVE PARA TELÉFONOS
+           ------------------------------- */
+        @media (max-width: 600px) {
+
+            header {
+                padding: 30px 10px;
+            }
+
+            header h1 {
+                font-size: 22px;
+            }
+
+            header p {
+                font-size: 16px;
+            }
+
+            .profile-photo {
+                width: 120px;
+                height: 120px;
+            }
+
+            nav a {
+                font-size: 16px;
+                margin: 5px 10px;
+            }
+
+            section {
+                padding: 25px 15px;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+        }
     </style>
 </head>
 
 <body>
 
     <!-- Sección principal -->
-    <header> <nav>
-          <img src="img/IMG-20250819-WA0037.jpg" alt="Foto personal" class="profile-photo" height="100" width="100">
-        <h1>Hola, soy Ingeniero en Software:</h1>
-        
-        <p style="margin-top: 10%;">Técnico en electromecánica automotriz y diesel para minería</p>
- </nav>
+    <header>
+        <img src="img/IMG-20250819-WA0037.jpg" alt="Foto personal" class="profile-photo">
+        <h1>Hola, soy Ingeniero en Software</h1>
+        <p>Técnico en electromecánica automotriz y diésel para minería</p>
     </header>
 
     <!-- Navegación -->
@@ -149,7 +190,7 @@
         <ul>
             <li><strong>Ingeniería de Software:</strong> Desarrollo de aplicaciones web, automatización de procesos, optimización de sistemas.</li>
             <li><strong>Electromecánica Automotriz:</strong> Diagnóstico y reparación de vehículos livianos y pesados.</li>
-            <li><strong>Diesel para Minería:</strong> Mantenimiento y operación de maquinaria minera, sistemas hidráulicos y motores de alto rendimiento.</li>
+            <li><strong>Diésel para Minería:</strong> Mantenimiento y operación de maquinaria minera, sistemas hidráulicos y motores de alto rendimiento.</li>
         </ul>
     </section>
 
@@ -173,7 +214,7 @@
         <h2>Contacto</h2>
         <p>📧 Email: <strong>carlosvillanuevard10@gmail.com</strong></p>
         <p>📱 Teléfono: <strong>+829 740 5979</strong></p>
-        <p>💼 LinkedIn / GitHub:https://carlosvillanuevard10-hash.github.io/Carlos-Javier-Villanueva-Hern-ndez/ </p>
+        <p>💼 Portafolio: <strong>carlosvillanuevard10-hash.github.io</strong></p>
     </section>
 
     <footer>
@@ -182,4 +223,3 @@
 
 </body>
 </html>
-
